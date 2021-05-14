@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGQUIZ</title>
+    <script src="./script/jquery.js"></script>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="headerContainer">
+            <div class="logo">
+                <h2>Progquiz</h2>
+                <i class="material-icons"> code </i>
+            </div>
+            <button class="navigationOpenButton">
+                <i class="material-icons"> menu</i>
+            </button>
+        </div>
+        <div class="navigation ">
+            <button class="navigationCloseButton">
+                <i class="material-icons"> close </i>
+            </button>
+
+            <ul>
+                <li class="navigationItem">Home <i class="material-icons">home</i></li>
+                <li class="navigationItem">Highscore <i class="material-icons">leaderboard</i></li>
+                <li class="navigationItem">About <i class="material-icons"> info </i> </li>
+                <li class="navigationItem">Changename <i class="material-icons"> autorenew </i> </li>
+            </ul>
+        </div>
+
+        <div class="homeContainer subContainer active">
+            <div class="warningNoUsername active">
+                <p>Please enter your name first</p>
+                <p>in change name in navigation</p>
+                <p>Before playing </p>
+            </div>
+            <div class="playingWithUsername">
+                <p class="playerName"></p>
+                <p>Click PLAY to start playing games</p>
+                <button class="playButton">PLAY</button>
+            </div>
+        </div>
+
+        <div class="changeNameContainer subContainer">
+            <h2>Change name</h2>
+
+            <div class="inputNameContainer">
+                <input maxlength=7 type="text" class="username" placeholder="Please enter username.">
+                <button class="saveButton saveUsernamebutton">
+                    <i class="material-icons">beenhere</i>
+                </button>
+            </div>
+
+        </div>
+        <div class="aboutContainer subContainer">
+            <h2>This is Progquiz App</h2>
+            <p>This application will help you to learn programming in a fun way.</p>
+            <p>Please enter first your name in navigation Change name</p>
+        </div>
+        <div class="highscoreContainer subContainer">
+            <h2>Highscore(Highest-Lowest)</h2>
+            
+            <button class="refreshButton"><i class="material-icons">autorenew</i></button>
+            <div class="playerlistContainer">
+                <div class="headerListContainer">
+                    <div class="gameh game1">QuizGame</div>
+                    <div class="gameh game2">Wackamole</div>
+                    <div class="gameh game3">CompleteTheCode</div>
+                    <div class="gameh game4">Game4</div>
+                    <div class="gameh game5">Game5</div>
+                </div>
+                <div class="playerListContainer">
+                    <div class="game1 gamep">
+                        
+                    </div>
+                    <div class="game2 gamep">
+
+                    </div>
+                    <div class="game3 gamep">
+
+                    </div>
+                    <div class="game4 gamep">
+
+                    </div>
+                    <div class="game5 gamep">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="gameLobby subContainer">
+            <h2>Game List</h2>
+            <div class="gameContainer">
+                <button type="submit" class="quizGameButtongame" >Quiz Game</button>
+                <button type="submit" class="wackAmoleButtongame">Wack a Mole</button>
+                <button type="submit" class="completeCodegame">Complete the code</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script/index.js"></script>
+    <script src="script/designScript.js"></script>
+
+</body>
+
+</html>

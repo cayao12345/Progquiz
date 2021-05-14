@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--color4);
+}
+.container{
+    position: relative;
+}
+.container .headerContainer{
+    background: var(--color2);
+    color: var(--color4);
+    position: relative;
+}
+.container .headerContainer button{
+    background: transparent;
+    border: none;
+    position: absolute;
+    left: 0;
+    top: 10%;
+}
+.container .headerContainer button i{
+    color: var(--color4);
+    font-size: 2.5rem;
+}
+
+.container .headerContainer .logo{
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font2);
+}
+.container .headerContainer .logo i{
+    padding: 0.5em;
+}
+.container .navigation{
+    z-index: 2;
+    background: var(--color3);
+    color: var(--color1);
+    width: max-content;
+    padding: 0.5em;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 200ms ease-out;
+}
+.container .navigation.active{
+    left: 0;
+    transition: 200ms ease-out;
+}
+.container .navigation button{
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 5%;
+    color: var(--color1);
+}
+.container .navigation button i{
+    font-size: 2.2rem;
+}
+.container .navigation button:hover{
+    cursor: pointer;
+}
+
+.container .navigation ul{
+    margin-top: 2em;
+    list-style-type: none;
+    font-family: var(--font2);
+    font-size: 2rem;
+
+}
+.container .navigation ul li{
+    padding: 0.5em;
+    text-align: center;
+}
+.container .navigation ul li:hover{
+    background: var(--color1);
+    color: var(--color3);
+    cursor: pointer;
+}
+.container .subContainer{
+    width: 100%;
+    height: 600px;
+    background: var(--color1);
+}
+.container .homeContainer{
+    text-align: center;
+    transform: scale(0);
+    display: none;
+    
+}
+.container .homeContainer.active{
+    transform: scale(1);
+    display: block;
+}
+.container .homeContainer h2{
+    font-family: var(--font2);
+    color: var(--color4);
+    padding: 0.5em;
+}
+.container .homeContainer p{
+    font-family: var(--font2);
+    color: var(--color4);
+    padding: 0.5em;
+}
+
+.container .homeContainer .warningNoUsername{
+    display: none;
+}
+.container .homeContainer .warningNoUsername.active{
+    display: block;
+}
+.container .homeContainer .playingWithUsername{
+    display: none;
+}
+.container .homeContainer .playingWithUsername.active{
+    display: block;
+}
+
+.container .gameLobby{
+    display: none;
+}
+.container .gameLobby .gameContainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container .gameLobby.active{
+    display: block;
+}
+
+.container .gameLobby h2{
+    padding: 0.5em;
+    font-family: var(--font1);
+    color: var(--color3);
+}
+
+.container .gameLobby .gameContainer > button{
+    font-family: var(--font2);
+    padding: 0.5em;
+    font-size: 1.2rem;
+    margin-top: 0.5em;
+    background: var(--color2);
+    color: var(--color4);
+    border: none;
+    transition: 500ms ease-out;
+}
+.container .gameLobby .gameContainer > button:hover{
+    cursor: pointer;
+    transition: 500ms ease-out;
+    background: var(--color4);
+    color: var(--color2);
+}
+.container .changeNameContainer{
+    transform: scale(0);
+    display: none;
+}
+.container .changeNameContainer.active{
+    transform: scale(1);
+    display: block;
+}
+.container .changeNameContainer h2{
+    color: var(--color4);
+    font-family: var(--font2);
+    padding: 0.5em;
+}
+.container .changeNameContainer .inputNameContainer{
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 0.5em;
+}
+.container .changeNameContainer .inputNameContainer input{
+    width: 200px;
+    padding: 0.5em;
+    font-size: 1.2rem;
+    border: none;
+    background: var(--color4);
+    color: var(--color1);
+}
+.container .changeNameContainer .inputNameContainer button{
+    background: transparent;
+    border: none;
+    padding: 0.5em;
+}
+.container .changeNameContainer .inputNameContainer button:hover{
+    cursor: pointer;
+}
+.container .changeNameContainer .inputNameContainer button i{
+    color: var(--color4);
+    font-size: 2rem;
+}
+
+
+.container .aboutContainer{
+    display: none;
+}
+.container .aboutContainer.active{
+    display: block;
+}
+.container .aboutContainer h2{
+    color: var(--color4);
+    font-family: var(--font2);
+    padding: 0.5em;
+}
+.container .aboutContainer p{
+    font-family: var(--font2);
+    color: var(--color4);
+    padding: 0.5em;
+}
+.container .subContainer{
+    display: none;
+}
+.container .subContainer.active{
+    display: block;
+}
+
+
+
+.container .highscoreContainer{
+
+}
+.container .highscoreContainer .headerListContainer{
+    display: flex;
+    font-size: 1.2rem;
+    font-family: var(--font2);
+    color: var(--color3);
+    width: 100%;
+    justify-content: center;
+    margin: 0.5em 0;
+}
+.container .highscoreContainer .headerListContainer > div{
+    width: 120px;
+    text-align: center;
+    overflow: scroll;
+}
+.container .highscoreContainer .playerListContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: var(--color2);
+    background: var(--color3);
+    height: 600px;
+}
+
+    
+.container .highscoreContainer .playerListContainer > div{
+    width: 120px;
+    text-align: center;
+    font-family: var(--font1);
+    display: flex;
+    flex-direction: column;   
+}
+
+
+
+
+.container .highscoreContainer h2{
+    font-family: var(--font2);
+    color: var(--color4);
+    padding: 0.5em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.container .displayingGameContainer{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    background: var(--color2);
+    display: none;
+}
+
+.container .displayingGameContainer.active{
+    display: block;
+}

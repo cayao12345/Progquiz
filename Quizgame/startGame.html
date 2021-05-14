@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../script/jquery.js"></script>
+    <script src="../script/questionBank.js"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="beginContainer active">
+            <h2>Quiz Game</h2>
+            <p class="welcomeScreen"></p>
+            <div class="buttonContainer">
+                <button class="htmlButton">Html</button>
+                <button class="cssButton">Css</button>
+                <button class="jscriptButton">Javascript</button>
+                <button class="quizQuit">Quit</button>
+            </div>
+        </div>
+
+
+
+        <div class="questionContainer ">
+            <h2 class="questionCount">Question </h2>
+            <p class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi magnam doloremque.</p>
+            
+            <div class="buttonContainer">
+                <button class="choice choice1" data-number=1>Choice1</button>
+                <button class="choice choice2" data-number=2>Choice2</button>
+                <button class="choice choice3" data-number=3>Choice3</button>
+                <button class="choice choice4" data-number=4>Choice4</button>
+            </div>
+        </div>
+
+        
+        <div class="endContainer">
+            <h2 class="finalScore">Your Score</h2>
+            <div class="buttonContainer">
+                <button>RETRY</button>
+                <button>QUIT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="designScript.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

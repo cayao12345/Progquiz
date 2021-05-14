@@ -1,0 +1,65 @@
+
+@font-face{
+  font-family: 'Ubuntu', sans-serif;
+  src: url(/css/fonts/Ubuntu-Regular.ttf);
+}
+@font-face{
+  font-family: 'Ubuntu Mono', monospace;
+  src: url(/css/fonts/UbuntuMono-Regular.ttf);
+}
+@font-face{
+  font-family: 'Fjalla One', sans-serif;
+  src: url(/css/fonts/FjallaOne-Regular.ttf);
+}
+@font-face{
+  font-family: 'Balsamiq Sans', cursive;
+  src: url(/css/fonts/BalsamiqSans-Bold.ttf);
+}
+:root{
+    --font1 : 'Ubuntu', sans-serif;
+    --font2 : 'Ubuntu Mono', monospace;
+    --font3 : 'Fjalla One', sans-serif;
+    --font4 : 'Balsamiq Sans', cursive;
+
+
+    --color1 : #320A28;
+    --color2 : #511730;
+    --color3 : #8E443D;
+    --color4 : #CB9173;
+    --color5 : #E0D68A;
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(./MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }

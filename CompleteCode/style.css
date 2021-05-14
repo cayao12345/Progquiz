@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color1 : #2C423F;
+    --color2 : #949B96;
+    --color3 : #829191;
+    --color4 : #4C5B61;
+    --color5 : #C5C5C5;
+}
+
+.container{
+    
+}
+.container h2{
+   padding: 0.5em 0;
+}
+.container .questionContainer{
+    font-family: var(--font1);
+    font-size: 1.2rem;
+    height: 100vh;
+    width: 100%;
+    background: var(--color2);
+    color: var(--color1);
+    display: none;
+}
+.container .questionContainer.active{
+    display: block;
+}
+.container .questionContainer .question{
+    padding: 0.5em 0;
+}
+
+.container .questionContainer .mainQuestion input{
+    font-family: var(--font2);
+    padding: 0.5em;
+    font-size: 1.2rem;
+    color: var(--color2);
+    border: none;
+    background: var(--color1);
+}
+.container .questionContainer button{
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+    background: var(--color1);
+    border: none;
+    border-radius: 0.5em;
+    margin: 1em 0;
+
+}
+.container .questionContainer button i{
+    color: var(--color2);
+    
+}
+.container .questionContainer button:hover{
+    background: var(--color4);
+    cursor: pointer;
+    
+}
+
+.container .homeContainer{
+    background: var(--color1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.container .homeContainer.active{
+    display: block;
+}
+.container .homeContainer h1{
+    padding: 0.5em;
+    text-align: center;
+    font-family: var(--font3);
+    color: var(--color3);
+}
+.container .homeContainer .buttonContainer{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+    margin: 0 auto;
+} 
+.container .homeContainer .buttonContainer button{
+    padding: 0.5em;
+    font-size: 1.2rem;
+    font-family: var(--font2);
+    background: var(--color4);
+    border: none;
+    margin: 0.5em 0;
+    color: var(--color3);
+} 
+.container .homeContainer .buttonContainer button:hover{
+    background: var(--color3);
+    color: var(--color4);
+    cursor: pointer;
+}
+
+
+.container .endContainer{
+    background: var(--color1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.container .endContainer.active{
+    display: block;
+}
+.container .endContainer h1{
+    padding: 0.5em;
+    text-align: center;
+    font-family: var(--font3);
+    color: var(--color3);
+}
+.container .endContainer .buttonContainer{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+    margin: 0 auto;
+} 
+.container .endContainer .buttonContainer button{
+    padding: 0.5em;
+    font-size: 1.2rem;
+    font-family: var(--font2);
+    background: var(--color4);
+    border: none;
+    margin: 0.5em 0;
+    color: var(--color3);
+} 
+.container .endContainer .buttonContainer button:hover{
+    background: var(--color3);
+    color: var(--color4);
+    cursor: pointer;
+}

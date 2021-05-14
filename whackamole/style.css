@@ -1,0 +1,230 @@
+body{
+    background: var(--color2);
+}
+.container{
+    width: 100%;
+    border: 1px solid black;
+    height: 100vh;
+    background: var(--color5);
+    position: relative;
+}
+
+.container .homeContainer{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color1);
+    display: none;
+}
+.container .homeContainer.active{
+    display: block;
+}
+
+
+
+
+
+
+.container .homeContainer .beginContainer{
+    display: none;
+}
+.container .homeContainer .beginContainer.active{
+    display: block;
+}
+.container .homeContainer .beginContainer h2{
+    font-family: var(--font1);
+    padding-left: 0.5em;
+    color: var(--color3);
+}
+.container .homeContainer .beginContainer p{
+    font-family: var(--font2);
+    padding: 0.5em;
+    color: var(--color3);
+}
+.container .homeContainer .beginContainer .moleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container .homeContainer .beginContainer .moleContainer .moleSub{
+    padding: 1em;
+    text-align: center;
+
+}
+.container .homeContainer .beginContainer .moleContainer .moleSub:hover{
+    background: var(--color2);
+    border-radius: 0.5em;
+}
+.container .homeContainer .beginContainer .moleContainer .moleSub p{
+    font-size: 2rem;
+}
+.container .homeContainer .beginContainer .moleContainer .moleSub .molePic{
+    width: 120px;
+    height: 120px;
+}
+.container .homeContainer .beginContainer .moleContainer .moleStart .molePic.alive{
+    background: url(./image/mole-alive.png);
+    background-position: center;
+    background-size: contain;
+}
+.container .homeContainer .beginContainer .moleContainer .moleStart .molePic.dead{
+    background: url(./image/mole-dead.png);
+    background-repeat: no-repeat    ;
+    background-position: center;
+    background-size: cover;
+}
+.container .homeContainer .beginContainer .moleContainer .moleQuit .molePic.alive{
+    background: url(./image/mole-alive.png);
+    background-position: center;
+    background-size: contain;
+}
+.container .homeContainer .beginContainer .moleContainer .moleQuit .molePic.dead{
+    background: url(./image/mole-alive.png);
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+
+
+.container .homeContainer .endContainer{
+    display: none;
+}
+.container .homeContainer .endContainer.active{
+    display: block;
+}
+.container .homeContainer .endContainer h2{
+    font-family: var(--font1);
+    padding-left: 0.5em;
+    color: var(--color3);
+    font-size: 1.5rem;
+}
+.container .homeContainer .endContainer p{
+    font-family: var(--font2);
+    padding: 0.5em;
+    font-size: 2rem;
+    color: var(--color3);
+}
+.container .homeContainer .endContainer .moleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container .homeContainer .endContainer .moleContainer .moleSub{
+    padding: 1em;
+    text-align: center;
+
+}
+.container .homeContainer .endContainer .moleContainer .moleSub:hover{
+    background: var(--color2);
+    border-radius: 0.5em;
+}
+.container .homeContainer .endContainer .moleContainer .moleSub p{
+    font-size: 2rem;
+}
+.container .homeContainer .endContainer .moleContainer .moleSub .molePic{
+    width: 120px;
+    height: 120px;
+}
+.container .homeContainer .endContainer .moleContainer .moleStart .molePic.alive{
+    background: url(./image/mole-alive.png);
+    background-position: center;
+    background-size: contain;
+}
+.container .homeContainer .endContainer .moleContainer .moleStart .molePic.dead{
+    background: url(./image/mole-dead.png);
+    background-repeat: no-repeat    ;
+    background-position: center;
+    background-size: cover;
+}
+.container .homeContainer .endContainer .moleContainer .moleQuit .molePic.alive{
+    background: url(./image/mole-alive.png);
+    background-position: center;
+    background-size: contain;
+}
+.container .homeContainer .endContainer .moleContainer .moleQuit .molePic.dead{
+    background: url(./image/mole-alive.png);
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+
+
+
+
+
+.container .question{
+    font-family: var(--font2);
+    color: var(--color3);
+    font-size: 2rem;
+}
+.container .questionContainer{
+    font-family: var(--font1);
+    color: var(--color1);
+    font-size: 2rem;
+}
+
+.container .choices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container .choices .choice{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .choices .choice:hover{
+    cursor: pointer;
+}
+.container .choices .choice .image.alive{
+    background: url("./image/mole-alive.png");
+    background-position: center;
+    background-size: contain;
+}
+.container .choices .choice .image.dead{
+    background: url("./image/mole-dead.png");
+    background-position: center;
+    background-size: cover;
+}
+.container .choices .choice .image{
+    width: 120px;
+    height: 120px;
+
+}
+.container .choices .choice p{
+    font-size: 2rem;
+    font-family: var(--font2);
+    color: var(--color3);
+    text-align: center;
+}
+.container .finishedContainer{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: var(--color1);
+    width: 100%;
+    transform: scale(0);
+    transition: 500ms ease-out;
+}
+.container .finishedContainer.active{
+    transform: scale(1);
+    transition: 500ms ease-out;
+}
+.container .finishedContainer button{
+    position: absolute;
+    right: 0;
+    background: transparent;
+    color: var(--color3);
+    border: none;
+}
+.container .finishedContainer button i{
+    font-size: 2.5rem;
+}
